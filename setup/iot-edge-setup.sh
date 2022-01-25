@@ -12,7 +12,7 @@
 ####################################################################################################
 
 # automatically install any extensions
-az config set extension.use_dynamic_install=yes_without_prompt
+#az config set extension.use_dynamic_install=yes_without_prompt
 az extension add --name azure-iot
 # check to see if the device already exists
 if test -z "$(az iot hub device-identity list -n $IOTHUB | grep "deviceId" | grep $EDGE_DEVICE)"; then
