@@ -11,7 +11,7 @@
 #
 ####################################################################################################
 
-pip install azure-cli==2.20.0
+pip install azure-cli==2.24.0
 # automatically install any extensions
 az config set extension.use_dynamic_install=yes_without_prompt
 az extension add --name azure-iot
