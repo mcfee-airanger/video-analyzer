@@ -24,4 +24,4 @@ fi
 # capture the connection string for the new edge device
 DEVICE_CONNECTION_STRING=$(az iot hub device-identity connection-string show --device-id $EDGE_DEVICE --hub-name $IOTHUB --query='connectionString')
 #json="{\\"password\\":\\"$password\\"}"; echo "$json" > 
-json="{\\"deviceConnectionString\\":\\"$DEVICE_CONNECTION_STRING"\\}"; echo "$json" > $AZ_SCRIPTS_OUTPUT_PATH
+json="{\\"deviceConnectionString\\":\\"$DEVICE_CONNECTION_STRING\\"}"; echo "$json" > $AZ_SCRIPTS_OUTPUT_PATH
